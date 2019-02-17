@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Kimchi Chat
+    body
+        h1 Kimchi Chat
+        #login
+            input#username(type="text", placeholder="write your username")
+            button#submitUsername Log in
+        #message
+            input#messageInput(type="text", placeholder="write a message")
+            button#submitMessage Send
+        #notifications
+        ul#messageList
+        script(src="/socket.io/socket.io.js")
+        script(src="/chat.js")
